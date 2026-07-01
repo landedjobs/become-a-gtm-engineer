@@ -14,7 +14,7 @@
 [![Questions](https://img.shields.io/badge/self--check-86%20Qs-6C2BD9)](skills-check.md)
 [![Visit Landed](https://img.shields.io/badge/Visit-Landed-6C2BD9?logo=rocket&logoColor=white)](https://landed.jobs)
 
-*Maintained by [Landed](https://landed.jobs) — scout AI-native roles, get **referred**, prep with mock interviews, and land the job.*
+*Maintained by [Landed](https://landed.jobs) — daily AI-native job matches, agent help with every application, and mock-interview prep.*
 
 </div>
 
@@ -205,7 +205,7 @@ This roadmap is one node in a cross-linked set of curated job lists, interview g
 
 <div align="center">
 
-### Don't just apply. Get **referred**, get **prepped**, get **Landed**.
+### Stop spraying. Get **matched**, get **prepped**, get **Landed**.
 
 [![Get Started](https://img.shields.io/badge/Get%20Started%20Free-→-6C2BD9?style=for-the-badge)](https://landed.jobs)
 
