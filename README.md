@@ -1,10 +1,10 @@
+<a name="top"></a>
+
 <div align="center">
 
-<img src="https://static.b100x.ai/email/landed-wordmark.png" alt="Landed" width="300" />
+<a href="https://landed.jobs"><img src="https://static.b100x.ai/email/landed-wordmark.png" alt="Landed" width="200"></a>
 
-# Become a GTM Engineer
-
-**The annotated 2026 roadmap to the highest-leverage new revenue role — code + AI applied to go-to-market, built the way senior teams actually build it.**
+<img src="https://static.b100x.ai/github-repos/images/become-a-gtm-engineer/banner.svg" alt="Become a GTM Engineer" width="100%">
 
 [![Stars](https://img.shields.io/github/stars/landedjobs/become-a-gtm-engineer?style=social)](https://github.com/landedjobs/become-a-gtm-engineer)
 [![License: MIT](https://img.shields.io/badge/License-MIT-6C2BD9.svg)](LICENSE)
@@ -13,6 +13,8 @@
 [![Resources](https://img.shields.io/badge/annotated%20resources-70+-6C2BD9)](#the-roadmap)
 [![Questions](https://img.shields.io/badge/self--check-86%20Qs-6C2BD9)](skills-check.md)
 [![Visit Landed](https://img.shields.io/badge/Visit-Landed-6C2BD9?logo=rocket&logoColor=white)](https://landed.jobs)
+
+**The annotated 2026 roadmap to the highest-leverage new revenue role — code + AI applied to go-to-market, built the way senior teams actually build it.**
 
 *Maintained by [Landed](https://landed.jobs) — daily AI-native job matches, agent help with every application, and mock-interview prep.*
 
@@ -191,15 +193,22 @@ PRs and issues welcome — add a resource, propose a tool, sharpen a stage, or e
 
 ---
 
-### Part of the Landed AI-native jobs family
+## Related
 
-This roadmap is one node in a cross-linked set of curated job lists, interview guides, and roadmaps:
+Part of the [Landed](https://landed.jobs) AI-native job-search family:
 
-- 🗺️ [**awesome-ai-native-jobs**](https://github.com/landedjobs/awesome-ai-native-jobs) — the umbrella map of every new AI-native role, with salaries and skills.
-- 🚀 [**gtm-engineer-roles**](https://github.com/landedjobs/gtm-engineer-jobs) — the live, auto-updated GTM Engineer job list.
-- 🧩 [**ai-product-engineer-roadmap**](https://github.com/landedjobs/ai-product-engineer-roadmap) — the sibling roadmap for the "PM who ships."
-- 🤝 [**forward-deployed-engineer-jobs**](https://github.com/landedjobs/forward-deployed-engineer-jobs) — the customer-embedded builder role.
-- 🧠 [**awesome-ai-engineer-interview**](https://github.com/landedjobs/awesome-ai-engineer-interview) — interview prep for the adjacent AI Engineer track.
+- 🧭 [awesome-ai-native-jobs](https://github.com/landedjobs/awesome-ai-native-jobs) — the umbrella that maps the whole AI-native job landscape
+- 🔥 [whos-hiring-in-ai](https://github.com/landedjobs/whos-hiring-in-ai) — real hiring posts from founders on X, sorted by role
+- 💸 [recently-funded-ai-startups-hiring](https://github.com/landedjobs/recently-funded-ai-startups-hiring) — fresh-capital startups staffing up now
+- 🚀 [ai-engineer-jobs](https://github.com/landedjobs/ai-engineer-jobs) — 300 live AI engineer roles, auto-updated
+- 🤝 [forward-deployed-engineer-jobs](https://github.com/landedjobs/forward-deployed-engineer-jobs) — FDE & customer-facing engineering
+- 📈 [gtm-engineer-jobs](https://github.com/landedjobs/gtm-engineer-jobs) — GTM engineering roles
+- 🎓 [ai-fellowships-and-residencies](https://github.com/landedjobs/ai-fellowships-and-residencies) — 75 fellowships, residencies & programs
+- 📘 [ai-interview-guides](https://github.com/landedjobs/ai-interview-guides) — 33 company interview guides
+- ❓ [ai-interview-questions](https://github.com/landedjobs/ai-interview-questions) — 331 real interview questions with answers
+- 🧪 [projects-to-land-an-ai-job](https://github.com/landedjobs/projects-to-land-an-ai-job) — portfolio projects that actually get you hired
+- 🗺️ [ai-product-engineer-roadmap](https://github.com/landedjobs/ai-product-engineer-roadmap) — the AI product engineer roadmap
+- 📦 [ai-engineer-portfolio-projects](https://github.com/landedjobs/ai-engineer-portfolio-projects) — 80+ buildable portfolio projects
 
 ---
 
