@@ -32,7 +32,7 @@
 | Community | Link | Why |
 |---|---|---|
 | **r/gtmengineering** | [reddit.com/r/gtmengineering](https://www.reddit.com/r/gtmengineering/) | Where the role is defined in public — real builds, real hiring threads, and where to publish your project writeups. |
-| **Lenny's Newsletter — GTM engineering** | [lennysnewsletter.com/p/gtm-engineering](https://www.lennysnewsletter.com/p/gtm-engineering) | The essay that put the role on the map for PMs and founders; the framing hiring managers echo. |
+| **Clay University — GTM Engineering** | [clay.com/university](https://clay.com/university) | Hands-on courses in the enrichment and automation workflows the role is built on. |
 
 ## 📚 Resources
 
@@ -43,7 +43,7 @@
 - 🧑‍🏫 [HubSpot Academy](https://academy.hubspot.com/) — **course.** Free Sales/Marketing/RevOps certs; CRM data-model fluency.
 - 🧑‍🏫 [Make Academy](https://academy.make.com/) — **course.** Free automation/iPaaS certs.
 - 🌐 [r/gtmengineering](https://www.reddit.com/r/gtmengineering/) — **community.** The role's public home; publish writeups here.
-- 📰 [Lenny's Newsletter: What is GTM engineering?](https://www.lennysnewsletter.com/p/gtm-engineering) — **essay.** The framing that hiring managers echo.
+- 🎓 [Clay University: GTM Engineering](https://clay.com/university) — **courses.** The workflows hiring managers expect you to know.
 
 ---
 

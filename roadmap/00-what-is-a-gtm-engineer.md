@@ -75,7 +75,7 @@ Clay's rubric scores **Commercial Bias** — *"automation should drive revenue o
 - 📰 [The Rise of the GTM Engineer](https://playbooks.hypergrowthpartners.com/p/the-rise-of-the-gtm-engineer) — HyperGrowth Partners. The T-shaped skillset and "wingman to RevOps" framing.
 - 📰 [What is GTM Engineering?](https://pipeline.zoominfo.com/sales/what-is-gtm-engineering) — ZoomInfo. Clear category overview from a stack vendor's POV.
 - 📰 [What is GTM Engineering — the bridge between product, sales & growth](https://www.candyboxcrm.com/blog/what-is-gtm-engineering-the-bridge-between-product-sales-growth) — Candybox CRM. Real builds on HubSpot, Salesforce, Hightouch, Gong, GPT-4.1.
-- ✍️ [What is GTM Engineering](https://lennysnewsletter.com/p/gtm-engineering) — Lenny's Newsletter. The mainstream-operator framing of the role.
+- ✍️ [Clay University — GTM Engineering](https://clay.com/university) — hands-on training in the workflows that define the role.
 - 🎬 [All about AI and GTM at Clay](https://youtube.com/watch?v=rLHGcCz0Z1U) — Everett Berry, Head of GTM Engineering at Clay (Pavilion). How the category-definer thinks about the role.
 - 💬 [r/gtmengineering](https://reddit.com/r/gtmengineering) — the community; real job posts, tool debates, and playbooks.
 
