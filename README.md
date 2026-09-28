@@ -51,6 +51,7 @@ flowchart LR
 - [Tools every GTM engineer should know (2026)](#tools-every-gtm-engineer-should-know-2026)
 - [Portfolio projects](#portfolio-projects) → [`projects/`](projects/)
 - [Skills check (86 questions)](skills-check.md)
+- [🎓 Go deeper on landed.jobs](#-go-deeper-on-landedjobs): free GTM courses by stage, practice questions, company guides
 - [What's new](#whats-new)
 - [FAQ](#faq)
 - [Contributing](#contributing)
@@ -142,6 +143,27 @@ Full annotations, docs links, and licenses in [6 · Tools & stack](roadmap/06-to
 - 🕵️ [**Claygent Research Agent**](projects/README.md#6--claygent-research-agent): per-lead research, gated, pushed to CRM notes.
 
 → Full briefs in [`projects/README.md`](projects/README.md).
+
+---
+
+## 🎓 Go deeper on landed.jobs
+
+Free GTM courses, practice questions and company guides on [landed.jobs](https://www.landed.jobs/?utm_source=github&utm_medium=referral&utm_campaign=github-become-a-gtm-engineer&utm_content=repo-home). The roadmap stays here; these add structured lessons and interview practice. Lesson counts in brackets.
+
+**Courses, mapped to the stages**
+
+| Stage | Courses |
+|---|---|
+| 1 · The GTM stack | [GTM Engineering Stack & Automation](https://www.landed.jobs/resources/courses/gtm-stack-automation?utm_source=github&utm_medium=referral&utm_campaign=github-become-a-gtm-engineer&utm_content=course-gtm-stack-automation) (6), including [CRM data modeling & hygiene](https://www.landed.jobs/resources/courses/gtm-stack-automation/gtmsa-crm-data?utm_source=github&utm_medium=referral&utm_campaign=github-become-a-gtm-engineer&utm_content=lesson-gtmsa-crm-data) and [APIs, webhooks & auth](https://www.landed.jobs/resources/courses/gtm-stack-automation/gtmsa-apis-webhooks?utm_source=github&utm_medium=referral&utm_campaign=github-become-a-gtm-engineer&utm_content=lesson-gtmsa-apis-webhooks) |
+| 2 · AI automation | [Enrichment waterfalls in Clay](https://www.landed.jobs/resources/courses/gtm-stack-automation/gtmsa-clay-enrichment?utm_source=github&utm_medium=referral&utm_campaign=github-become-a-gtm-engineer&utm_content=lesson-gtmsa-clay-enrichment) · [GTM Engineering: Outbound Systems](https://www.landed.jobs/resources/courses/gtm-outbound-systems?utm_source=github&utm_medium=referral&utm_campaign=github-become-a-gtm-engineer&utm_content=course-gtm-outbound-systems) (8) |
+| 3 · Customer-facing AI prototypes | [Customer-Facing AI Prototypes](https://www.landed.jobs/resources/courses/gtm-customer-prototypes?utm_source=github&utm_medium=referral&utm_campaign=github-become-a-gtm-engineer&utm_content=course-gtm-customer-prototypes) (5) |
+| 4 · Solution design & demo selling | [AI Solution Design, Evals & Demo Selling](https://www.landed.jobs/resources/courses/gtm-solution-design?utm_source=github&utm_medium=referral&utm_campaign=github-become-a-gtm-engineer&utm_content=course-gtm-solution-design) (6) · [Discovery, Decomposition & Client Communication](https://www.landed.jobs/resources/courses/fde-discovery-comms?utm_source=github&utm_medium=referral&utm_campaign=github-become-a-gtm-engineer&utm_content=course-fde-discovery-comms) (6) |
+
+**Practice questions, each with a full answer.** [Why did outbound reply rates drop 30%?](https://www.landed.jobs/resources/questions/diagnose-why-outbound-email-reply-rates-dropped-30-last-month-aiq-0088?utm_source=github&utm_medium=referral&utm_campaign=github-become-a-gtm-engineer&utm_content=question-aiq-0088) · [Account research for 10,000 prospects](https://www.landed.jobs/resources/questions/design-an-account-research-and-personalization-pipeline-for-10000-prospects-aiq-0091?utm_source=github&utm_medium=referral&utm_campaign=github-become-a-gtm-engineer&utm_content=question-aiq-0091) · [Lead routing across territories](https://www.landed.jobs/resources/questions/design-lead-routing-across-territories-segments-and-account-ownership-rules-aiq-0093?utm_source=github&utm_medium=referral&utm_campaign=github-become-a-gtm-engineer&utm_content=question-aiq-0093) · [Repair a CRM full of duplicates](https://www.landed.jobs/resources/questions/a-crm-has-duplicates-and-inconsistent-fields-across-systems-how-do-you-repair-it-aiq-0095?utm_source=github&utm_medium=referral&utm_campaign=github-become-a-gtm-engineer&utm_content=question-aiq-0095) · [Sync a CRM, warehouse and enrichment providers](https://www.landed.jobs/resources/questions/design-reliable-synchronization-between-a-crm-data-warehouse-and-enrichment-prov-aiq-0096?utm_source=github&utm_medium=referral&utm_campaign=github-become-a-gtm-engineer&utm_content=question-aiq-0096) · [Buy the GTM tool or build it?](https://www.landed.jobs/resources/questions/how-do-you-decide-whether-to-buy-a-gtm-tool-or-build-the-workflow-internally-aiq-0097?utm_source=github&utm_medium=referral&utm_campaign=github-become-a-gtm-engineer&utm_content=question-aiq-0097). More in the [FDE and GTM question list](https://github.com/landedjobs/ai-interview-questions/blob/main/roles/fde-and-gtm.md).
+
+**Company guides.** [Clay](https://www.landed.jobs/resources/guides/clay-ai-interview-guide?utm_source=github&utm_medium=referral&utm_campaign=github-become-a-gtm-engineer&utm_content=guide-clay-ai-interview-guide) · [Notion](https://www.landed.jobs/resources/guides/notion-ai-interview-guide?utm_source=github&utm_medium=referral&utm_campaign=github-become-a-gtm-engineer&utm_content=guide-notion-ai-interview-guide) · [Canva](https://www.landed.jobs/resources/guides/canva-ai-interview-guide?utm_source=github&utm_medium=referral&utm_campaign=github-become-a-gtm-engineer&utm_content=guide-canva-ai-interview-guide) · [Intercom](https://www.landed.jobs/resources/guides/intercom-ai-interview-guide?utm_source=github&utm_medium=referral&utm_campaign=github-become-a-gtm-engineer&utm_content=guide-intercom-ai-interview-guide) · [Anthropic](https://www.landed.jobs/resources/guides/anthropic-ai-interview-guide?utm_source=github&utm_medium=referral&utm_campaign=github-become-a-gtm-engineer&utm_content=guide-anthropic-ai-interview-guide), and [all 200 company guides](https://github.com/landedjobs/ai-interview-guides).
+
+**Roadmap and pay.** [GTM Engineer roadmap](https://www.landed.jobs/resources/roadmaps/gtm-engineer?utm_source=github&utm_medium=referral&utm_campaign=github-become-a-gtm-engineer&utm_content=roadmap-gtm-engineer) · [Forward Deployed Engineer salaries](https://www.landed.jobs/salaries/forward-deployed-engineer?utm_source=github&utm_medium=referral&utm_campaign=github-become-a-gtm-engineer&utm_content=salaries-forward-deployed-engineer) (the closest role with a salary page)
 
 ---
 
