@@ -14,7 +14,7 @@
 [![Questions](https://img.shields.io/badge/self--check-86%20Qs-6C2BD9)](skills-check.md)
 [![Visit Landed](https://img.shields.io/badge/Visit-Landed-6C2BD9?logo=rocket&logoColor=white)](https://www.landed.jobs/?utm_source=github&utm_medium=referral&utm_campaign=github-become-a-gtm-engineer&utm_content=repo-home)
 
-**The annotated 2026 roadmap to the highest-leverage new revenue role, code + AI applied to go-to-market, built the way senior teams actually build it.**
+**The annotated 2026 roadmap to GTM engineering: code and AI applied to go-to-market, in 9 stages.**
 
 *Maintained by [Landed](https://www.landed.jobs/?utm_source=github&utm_medium=referral&utm_campaign=github-become-a-gtm-engineer&utm_content=repo-home): daily AI-native job matches, agent help with every application, and mock-interview prep.*
 
