@@ -20,6 +20,13 @@
 
 </div>
 
+<!-- landed-apply-cta -->
+<table><tr><td>
+<b>⚡ <a href="https://app.landed.jobs/signup?from=github&amp;cta=github-guide-apply&amp;item=become-a-gtm-engineer&amp;utm_source=github&amp;utm_medium=referral&amp;utm_campaign=github-become-a-gtm-engineer&amp;utm_content=guide-apply">Auto-apply to GTM engineer jobs that match you →</a></b><br>
+Upload your resume once. <a href="https://www.landed.jobs">landed</a> finds the roles that fit you and applies within hours of them going live, so you actually hear back.
+</td></tr></table>
+
+
 ---
 
 A **GTM Engineer** is what a marketer, SDR, or RevOps operator becomes when the job turns technical. Skaled (Nov 2025) calls the role **"the revenue org's AI operator"**: someone who *"actively builds AI-powered systems that automate, augment, and accelerate go-to-market performance."* Tabula (2026) sharpens it against the neighbours: the GTM Engineer is the **"builder"** who *"connects systems, automates workflows, and creates technical scaffolding for Sales, Marketing, and CS,"* while **RevOps is the "conductor"** (governance, forecasts) and the **Sales Engineer is the "translator"** (de-risking technical objections). Clay coined the title in 2023; it now sees roughly **100 job listings a month**, with Anthropic, Notion, Canva, Intercom, Cursor, and ElevenLabs among the named adopters. Base comp lands around **$180K–$240K** with **$230K–$310K OTE**.
