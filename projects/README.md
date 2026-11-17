@@ -24,13 +24,25 @@ Quick index — each links to the **full brief** (Problem · Stack · Milestones
 ### 6 · Claygent Research Agent
 **Clay + Anthropic/OpenAI** — proves AI-column gating, refusal handling, and provenance-over-raw-value. → [full brief](../roadmap/07-portfolio-projects.md#6--claygent-research-agent)
 
+## Built for a real hiring need (Nov 2026)
+
+Two briefs aimed at problems named in live job postings, each with a results table (metric, how to measure it, honest baseline). *Last checked: 17 Nov 2026.*
+
+### 7 · Inbound Routing and SDR Handoff Loop
+**Webhook + Clay + Salesforce/HubSpot + Slack** · built for the handoff and feedback-loop work in Clay's GTM Engineer, Marketing posting. Proves routing, follow-up SLAs, an exception queue and a feedback loop that changes the rules. → [full brief](../roadmap/07-portfolio-projects.md#7--inbound-routing-and-sdr-handoff-loop)
+
+### 8 · GTM Agent Reliability Harness
+**Durable workflow runner + sandbox + schema validation + CRM upsert** · built for the reliability bar in Baseten's GTM Engineer posting. Proves retries, idempotency, logs and recovery under four injected faults. → [full brief](../roadmap/07-portfolio-projects.md#8--gtm-agent-reliability-harness)
+
+**Templates:** README, eval report and presentation templates live in [💻 landedjobs/ai-engineer-portfolio-projects/templates](https://github.com/landedjobs/ai-engineer-portfolio-projects/tree/main/templates) (MIT).
+
 ## How to present a GTM project
 
 The build is half the signal; the *framing* is the other half.
 
 1. **One public repo per project.** A dedicated repo reads as a finished artifact; a folder buried in a mono-repo does not.
 2. **A case-study README.** Open with the number you moved (cost-per-lead drop, coverage lift, reply-rate delta), *then* the problem, *then* the stack and the architecture. Lead with revenue, not the pipeline diagram.
-3. **A public writeup.** A short post on [r/gtmengineering](https://www.reddit.com/r/gtmengineering/) or LinkedIn per build — the case study in prose. This is what surfaces in search and gets the repo seen.
+3. **A public writeup.** A short post on LinkedIn or your own blog per build — the case study in prose. This is what surfaces in search and gets the repo seen.
 4. **Synthetic data by default.** Use customer-shaped synthetic data in the public repo; never commit real PII or a customer export.
 5. **Name the failure modes.** A `## What would break in production` section (rate limits, 4xx retry loops, refusals, unverified emails) signals you grade reliability, not the happy path — the take-home rubric's real bar.
 

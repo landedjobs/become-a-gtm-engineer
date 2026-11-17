@@ -62,6 +62,63 @@ Each brief below has the same five parts: **Problem · Stack · Milestones · Wh
 
 ---
 
+## Build for a real hiring need (Nov 2026)
+
+*Last checked: 17 Nov 2026*
+
+**Start from a revenue problem a real team has posted, then build the smallest system that solves it.** The six briefs above teach the parts. The two below aim at work that two named companies describe in live job postings. Read the posting first, then build for the problem it names: not for the tool list.
+
+The two projects are practice builds we propose. They are not the companies' own assignments, and neither company has said it grades these exact demos. Each brief has the usual five parts plus two more: **the result to show** (a metric, how you measure it, and an honest baseline) and **how to present it**.
+
+> [!TIP]
+> **Use a baseline you can defend.** Run your system and a simple "before" version (round-robin routing, one enrichment provider, a script with no retries) on the same labeled test set. If you never ran it on live traffic, label the numbers **offline evaluation**. Don't report reply rates, meetings or pipeline you did not actually measure.
+
+Templates for the README, the eval report and the write-up: [💻 landedjobs/ai-engineer-portfolio-projects/templates](https://github.com/landedjobs/ai-engineer-portfolio-projects/tree/main/templates) (MIT). They were written for AI engineering projects, but the results table, the eval report and the resume-line formula fit GTM builds as-is.
+
+### 7 · Inbound Routing and SDR Handoff Loop
+
+**Built for:** Clay's handoff problem. Clay's [GTM Engineer, Marketing posting](https://jobs.ashbyhq.com/claylabs/9f8067d1-61cf-42cd-aad7-0ac54de8b345) (official, New York, published 12 Oct 2026) asks this person to own handoff logic, routing and assignment rules, follow-up SLAs, and "the feedback loop that tells marketing which leads were actually worth working." It also asks them to measure the impact of what they build. Most routing demos stop at "lead assigned". This one shows what happens after.
+
+- **Problem:** Inbound leads get scored and routed, but nobody can see whether the SDR followed up on time or whether the lead was worth working. So the qualification rules never improve.
+- **Stack:** A webhook or form source → normalize and dedup → enrichment (Clay, or one provider plus a fallback) → a deterministic fit score → optional AI classification for ambiguous rows → CRM assignment (a Salesforce Developer Edition or HubSpot sandbox) → Slack alert to the owner → an SLA check → an outcome table that feeds back into the score.
+- **Milestones:** (1) build a labeled fixture set of about 100 synthetic leads, including duplicates, missing fields, ambiguous territories and accounts you should reject; (2) the routing path with an exception queue for rows the system should not guess on; (3) an SLA timer that flags leads with no first touch inside the window; (4) an outcome field (worked, disqualified, meeting) that SDRs set, and a weekly report on which score bands converted; (5) one rule change driven by that report, re-run on the same fixtures.
+- **What it proves:** You can own the space between Marketing and SDRs, not just the enrichment step. Routing, SLAs, the exception queue and a feedback loop that changes the rules.
+- **Stretch:** Territory and capacity-aware assignment; a dashboard of where leads stall, by source.
+- **Result to show:**
+
+  | Metric | How to measure it | Honest baseline |
+  |---|---|---|
+  | Assignment accuracy | Share of fixture leads routed to the owner your label says is correct | Round-robin or a single territory rule, same fixtures |
+  | Exception precision | Of rows sent to the exception queue, the share a human agrees were truly ambiguous | The baseline routes every row and never refuses |
+  | Enrichment match rate | Share of leads with a verified company and contact after enrichment | One provider, no fallback |
+  | Time to owner | Seconds from webhook received to CRM owner set, p50 and p95 over the fixture run | Your own estimate of the manual step, labeled as an estimate |
+  | Duplicate rate | Duplicate CRM records created per 100 inbound rows, with duplicates seeded on purpose | No dedup step |
+
+- **How to present it:** Open the README with the results table. Add a 2-minute walkthrough that shows one clean lead, one duplicate and one lead the system refuses to route. Show the feedback report and the rule it changed. Name it plainly: "inbound routing with an SDR feedback loop, offline evaluation on 100 labeled leads."
+
+### 8 · GTM Agent Reliability Harness
+
+**Built for:** Baseten's reliability standard. Baseten's [GTM Engineer posting](https://jobs.ashbyhq.com/baseten/5cd2f489-b9ee-428b-b252-94e83d55f107) (official, New York, published 25 Aug 2026) asks for production agents built "with durable workflows and sandboxed execution", so they run "reliably in production instead of as one-off scripts." It also names Clay, Salesforce, Claude Code, APIs and webhooks. The point: how the system behaves when something fails matters as much as the prompt.
+
+- **Problem:** Most AI GTM demos only show the happy path. In production, a provider times out, a webhook arrives twice, the model returns broken JSON or the CRM write fails. A one-off script then double-writes, loses the record or stops with no alert.
+- **Stack:** Take any project above (the inbound router or the Claygent research agent fit best) and wrap it in a durable workflow runner (Vercel Workflow, or Temporal or Inngest) with retries per step. Run model-generated code or tool calls in a sandbox. Validate structured output against a schema. Upsert to Salesforce or HubSpot keyed on a unique ID. Send failures to a dead-letter queue with a Slack alert.
+- **Milestones:** (1) a failure-injection script that triggers four faults on demand: provider timeout, duplicate webhook, invalid model response, failed CRM write; (2) capped retries with backoff and an idempotency key on every write; (3) structured logs with one run ID across steps; (4) a replay command for the dead-letter queue; (5) a cost sheet per run.
+- **What it proves:** You can ship an agent that a sales team can trust. It survives the failures that turn a demo into a support ticket.
+- **Stretch:** A per-run cost ceiling that stops the workflow; an alert when the failure rate crosses a threshold.
+- **Result to show:**
+
+  | Metric | How to measure it | Honest baseline |
+  |---|---|---|
+  | Duplicate writes | CRM records created when each of N webhooks is replayed 2 to 3 times (target: 0) | The same flow as a plain script, no idempotency key |
+  | Recovery rate | Share of injected faults that finish correctly after retry or replay | The plain script, same injected faults |
+  | Invalid-output handling | Share of malformed model responses caught by the schema check, not written to the CRM | No validation step |
+  | Time saved per task | Minutes a rep spends on the task by hand vs. with the agent, timed on 10 real or realistic tasks | Your own timed manual run, stated with its sample size |
+  | Cost per successful run | Model, enrichment and compute cost divided by runs that finished correctly | Not applicable: just report it, with prices dated |
+
+- **How to present it:** Put a fault table at the top of the README: each injected fault, what the baseline did, what your system did. Record a short video that triggers each fault live and shows the log and the recovered record. Add a `## What would break in production` section for the faults you did not cover.
+
+---
+
 ## How to present them
 
 Ship **one public repo per project** plus a short **Reddit (r/gtmengineering) or LinkedIn writeup** per build — the case-study framing that turns a repo into a hiring signal. The full presentation checklist lives in [`projects/README.md`](../projects/README.md).
@@ -69,12 +126,11 @@ Ship **one public repo per project** plus a short **Reddit (r/gtmengineering) or
 ## 📚 Resources
 
 - 📰 [How to build a GTM engineering portfolio that gets you hired](https://databar.ai/blog/article/how-to-build-a-gtm-engineering-portfolio-that-gets-you-hired) — **article** (databar, 2026). The "3–5 high-quality builds" thesis and per-project case-study framing.
-- 💻 [onvoyage-ai/gtm-engineer-skills](https://github.com/onvoyage-ai/gtm-engineer-skills) — **repo · ~1.2k★ · MIT.** The executable AEO/GEO audit skills behind project #3.
-- 💻 [enescingoz/awesome-n8n-templates](https://github.com/enescingoz/awesome-n8n-templates) — **repo · 280+ templates · MIT.** Clone-and-adapt starting points for the n8n inbound-to-CRM flow (project #5).
+- 💻 [onvoyage-ai/gtm-engineer-skills](https://github.com/onvoyage-ai/gtm-engineer-skills) — **repo · ~1.4k★ · MIT.** The executable AEO/GEO audit skills behind project #3.
+- 💻 [enescingoz/awesome-n8n-templates](https://github.com/enescingoz/awesome-n8n-templates) — **repo · 280+ templates · ⚠️ CC BY 4.0 (n8n itself uses the fair-code Sustainable Use License).** Clone-and-adapt starting points for the n8n inbound-to-CRM flow (project #5).
 - 📘 [Clay University](https://university.clay.com/docs) — **docs.** Waterfall + Claygent, the backbone of projects #1 and #6.
 - 📘 [n8n Docs](https://docs.n8n.io/) — **docs.** The webhook → dedup → upsert spine for project #5.
-- 🌐 [r/gtmengineering](https://www.reddit.com/r/gtmengineering/) — **community.** Where to publish the writeup and get feedback that surfaces in search.
 
 ---
 
-**Next:** [8 · Learning repos & academies →](08-learning-repos-and-academies.md) — the MIT-licensed repos to clone and the free vendor academies to mine.
+**Next:** [8 · Learning repos & academies →](08-learning-repos-and-academies.md) — the open repos to clone (licences noted) and the free vendor academies to mine.

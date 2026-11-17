@@ -8,7 +8,7 @@
 
 [![Stars](https://img.shields.io/github/stars/landedjobs/become-a-gtm-engineer?style=social)](https://github.com/landedjobs/become-a-gtm-engineer)
 [![License: MIT](https://img.shields.io/badge/License-MIT-6C2BD9.svg)](LICENSE)
-[![Updated](https://img.shields.io/badge/updated-2026--07-00A86B)](#whats-new)
+[![Updated](https://img.shields.io/badge/updated-2026--11-00A86B)](#whats-new)
 [![Stages](https://img.shields.io/badge/stages-9-6C2BD9)](#the-roadmap)
 [![Resources](https://img.shields.io/badge/annotated%20resources-70+-6C2BD9)](#the-roadmap)
 [![Questions](https://img.shields.io/badge/self--check-86%20Qs-6C2BD9)](skills-check.md)
@@ -29,7 +29,7 @@ Upload your resume once. <a href="https://www.landed.jobs">landed</a> finds the 
 
 ---
 
-A **GTM Engineer** is what a marketer, SDR, or RevOps operator becomes when the job turns technical. Skaled (Nov 2025) calls the role **"the revenue org's AI operator"**: someone who *"actively builds AI-powered systems that automate, augment, and accelerate go-to-market performance."* Tabula (2026) sharpens it against the neighbours: the GTM Engineer is the **"builder"** who *"connects systems, automates workflows, and creates technical scaffolding for Sales, Marketing, and CS,"* while **RevOps is the "conductor"** (governance, forecasts) and the **Sales Engineer is the "translator"** (de-risking technical objections). Clay coined the title in 2023; it now sees roughly **100 job listings a month**, with Anthropic, Notion, Canva, Intercom, Cursor, and ElevenLabs among the named adopters. Base comp lands around **$180K–$240K** with **$230K–$310K OTE**.
+A **GTM Engineer** is what a marketer, SDR, or RevOps operator becomes when the job turns technical. Clay, which coined the title in 2023, defines GTM engineers as people who *"increase revenue efficiency by combining creative GTM thinking with the ability to build at scale"* ([Clay, Apr 2026](https://www.clay.com/blog/gtm-engineering)). Its guide says the role has spread to companies like Cursor, Lovable and Webflow, with about 100 new GTME listings a month by its own count. In the US the median posted base is about **$160K** (947 postings, year to Nov 2026; see [salaries](salaries.md)). How the role differs from RevOps, sales engineering and growth engineering: [stage 0](roadmap/00-what-is-a-gtm-engineer.md).
 
 This repo is the roadmap: **9 stages**, each a one-concept-per-file lecture pulled from senior practice, with typed, annotated, capped resource links and an 86-question self-assessment. It is an *index*: the depth lives in [`roadmap/`](roadmap/).
 
@@ -58,6 +58,9 @@ flowchart LR
 - [Tools every GTM engineer should know (2026)](#tools-every-gtm-engineer-should-know-2026)
 - [Portfolio projects](#portfolio-projects) → [`projects/`](projects/)
 - [Skills check (86 questions)](skills-check.md)
+- [Salaries: US, Europe, India](salaries.md) 🆕
+- [Interviews and take-homes](interviews.md) 🆕
+- [Paths into GTM engineering](career-paths.md) 🆕
 - [🎓 Go deeper on landed.jobs](#-go-deeper-on-landedjobs): free GTM courses by stage, practice questions, company guides
 - [What's new](#whats-new)
 - [FAQ](#faq)
@@ -113,7 +116,7 @@ The warehouse + reverse-ETL layer (Snowflake/BigQuery + Hightouch/Census), the 2
 Ship **3–5 public repos, not one big resume.** The six canonical project briefs (waterfall enrichment, AI personalization demo, AEO/GEO audit, reverse-ETL routing, n8n inbound-to-CRM, Claygent research agent): full briefs in [`projects/`](projects/). → [read](roadmap/07-portfolio-projects.md)
 
 ### [8 · Learning repos & academies to mine](roadmap/08-learning-repos-and-academies.md)
-The MIT-licensed repos worth cloning (**onvoyage-ai/gtm-engineer-skills**, **awesome-gtm-engineering**, **awesome-n8n-templates**), the free vendor academies (Clay University, HubSpot, Make), and the communities. → [read](roadmap/08-learning-repos-and-academies.md)
+The open repos worth cloning (**onvoyage-ai/gtm-engineer-skills**, **awesome-gtm-engineering**, **awesome-n8n-templates**, each with its licence noted), the free vendor academies (Clay University, HubSpot, Make), and the communities. → [read](roadmap/08-learning-repos-and-academies.md)
 
 ---
 
@@ -178,6 +181,7 @@ Free GTM courses, practice questions and company guides on [landed.jobs](https:/
 
 > Most recent first.
 
+- **2026-11**: 🆕 [Salaries](salaries.md) by region, each figure labelled base or OTE with its sample and date. 🆕 [Interviews and take-homes](interviews.md) from Clay's own published process and question bank. 🆕 [Paths into GTM engineering](career-paths.md) from SDR, RevOps, marketing ops, software and data, with real people's routes. [Stage 0](roadmap/00-what-is-a-gtm-engineer.md) rewritten with a sourced definition, Clay's two tracks and 13 employers' team models. [Stage 6](roadmap/06-tools-and-stack.md) now ranks tools by how often 15 current postings ask for them. Two new [portfolio briefs](projects/) built for real hiring needs. Removed figures we could not trace to a source: the "$180K-$240K base" (one company's posting, not a market band) and "~27% pass Clay's process".
 - **2026-07**: Initial release. 9 stages, the signature stack table, the 86-question [skills check](skills-check.md), and 6 portfolio briefs. Dated for 2026: AI GTM Engineer as "the revenue org's AI operator," MCP connectors, agentic evals, AEO/GEO, and the low-code/custom-code seam.
 - **2026-07**: Added the "builder vs conductor vs translator" role map (Tabula) and named-company team-shape patterns (Notion, Canva, Anthropic, Intercom).
 
@@ -201,10 +205,10 @@ Yes. The title Clay coined in 2023 now sees ~**100 listings a month** and is a n
 Ship **3–5 small, public, documented repos, not one giant project.** Pick from the six canonical briefs (waterfall enrichment, AI personalization, AEO/GEO audit, reverse-ETL routing, n8n inbound-to-CRM, Claygent agent). For each, write the README as if it's a case study: the problem, the stack, *and the number you moved* (cost-per-lead drop, coverage lift, reply-rate delta). A repo with a clear revenue narrative beats a clever pipeline with no story. See [`projects/`](projects/README.md).
 
 **GTM Engineer salary?**
-Roughly **$180K–$240K base** with **$230K–$310K OTE** (25–30% variable), per aggregated 2026 US ranges; the broader band runs **$132K–$241K** depending on seniority, equity, and company stage. Ranges are approximate and skew higher at frontier labs and fast-growing B2B SaaS. See the live [GTM Engineer job list](https://github.com/landedjobs/gtm-engineer-jobs).
+In the US, the median posted **base is about $160K** (middle half $135K–$185K), across 947 postings in the year to 4 Nov 2026 ([GTM Engineer Search](https://gtmengineersearch.com/gtm-engineer-salary/report/2026-11), aggregator, base only). Single employers range from $150K–$220K (Clay) to $180K–$240K base (Conduit). The UK, Europe and India pay much less and vary by employer type. Every figure, with what it covers: [salaries.md](salaries.md). See the live [GTM Engineer job list](https://github.com/landedjobs/gtm-engineer-jobs). *Last checked: 17 Nov 2026.*
 
 **Why do most candidates fail the interview?**
-Clay's rubric scores **Commercial Bias**: *"automation should drive revenue outcomes, not just efficiency"*: and it's a stated reason only **~27%** of engineers pass. Candidates who say "I'd wire up Clay and Outreach to save the team time" without a revenue link read as posturing. Lead every answer with the pipeline number, name the funnel stage and unit economic, and *only then* reach for the tool. See [skills-check.md](skills-check.md).
+Clay's [hiring guide](https://www.clay.com/blog/how-to-hire-a-gtm-engineer) (2026) lists **commercial bias** as a trait to screen for: *"automation should drive revenue outcomes, not just efficiency"*. Candidates who say "I'd wire up Clay and Outreach to save the team time" without a revenue link read as posturing. Lead every answer with the pipeline number, name the funnel stage and unit economic, and *only then* reach for the tool. See [skills-check.md](skills-check.md).
 
 ---
 
@@ -234,7 +238,10 @@ Part of the [Landed](https://www.landed.jobs/?utm_source=github&utm_medium=refer
 - ❓ [ai-interview-questions](https://github.com/landedjobs/ai-interview-questions): 759 AI interview questions with answers
 - 🧪 [projects-to-land-an-ai-job](https://github.com/landedjobs/projects-to-land-an-ai-job): portfolio projects that actually get you hired
 - 🗺️ [ai-product-engineer-roadmap](https://github.com/landedjobs/ai-product-engineer-roadmap): the AI product engineer roadmap
-- 📦 [ai-engineer-portfolio-projects](https://github.com/landedjobs/ai-engineer-portfolio-projects): 80+ buildable portfolio projects
+- 📦 [ai-engineer-portfolio-projects](https://github.com/landedjobs/ai-engineer-portfolio-projects): 86 buildable portfolio projects and 10 step-by-step build guides
+- 📄 [ai-engineer-resume-examples](https://github.com/landedjobs/ai-engineer-resume-examples): 10 example resumes and 191 bullets
+- 🎯 [awesome-ai-engineer-interview](https://github.com/landedjobs/awesome-ai-engineer-interview): AI engineer interview loops at 17 companies
+- 🏗️ [ai-system-design-interview](https://github.com/landedjobs/ai-system-design-interview): 16 worked AI system design answers
 
 ---
 

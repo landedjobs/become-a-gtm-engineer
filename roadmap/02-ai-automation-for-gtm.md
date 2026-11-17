@@ -74,7 +74,6 @@ Low-code (Clay, n8n, HubSpot workflows) and custom code are **complements, not r
 
 - 📘 [Clay University](https://university.clay.com/docs) — learn Clay AI agents + waterfall enrichment from the category-definer. Free courses + certs.
 - 🧑‍🏫 [Clay templates library](https://www.clay.com/templates) — clone community playbooks (enrichment waterfalls, Claygent research, scoring) instead of building from scratch.
-- 📰 [What is an AI GTM Engineer](https://skaled.com/insights/what-is-an-ai-gtm-engineer/) — Skaled. The 4-pillar framework for where AI plugs into GTM.
 - 💻 [enescingoz/awesome-n8n-templates](https://github.com/enescingoz/awesome-n8n-templates) — **repo · MIT · 280+ templates.** The largest n8n template library: AI agents, RAG chatbots, email automation. The single best mine for runnable GTM automations.
 - 📘 [OpenAI Platform Docs](https://platform.openai.com/docs) — prompts, **structured outputs**, tool calls — the reliability primitives behind gated AI columns.
 - 📘 [Anthropic Claude Docs](https://docs.anthropic.com) — Claude + Claude-Code agents; the second provider so an API key never blocks a play.
